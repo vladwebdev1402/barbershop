@@ -1,3 +1,5 @@
-import HeaderLink from './link/HeaderLink/HeaderLink';
+import Button from './button/Button';
 import Icon from './icon/Icon';
-export { HeaderLink, Icon };
+import HeaderLink from './link/HeaderLink/HeaderLink';
+
+export { HeaderLink, Icon, Button };

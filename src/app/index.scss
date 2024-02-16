@@ -24,3 +24,11 @@ a {
   text-decoration: none;
   color: $white;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: $invert;
+  font-family: 'Playfair Display';
+}

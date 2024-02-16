@@ -1,0 +1,22 @@
+.button {
+  padding: 18px 40px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.button_contained {
+  background-color: $orange;
+
+  &:hover {
+    background-color: $orange-dark;
+  }
+}
+
+.button_outlined {
+  border: 1px solid $white;
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}

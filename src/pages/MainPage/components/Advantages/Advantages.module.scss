@@ -1,0 +1,43 @@
+.advantages {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        background-color: $brown-dark;
+        height: calc(100% + 400px);
+        top: -300px;
+        z-index: -1;
+    }
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.advantage {
+    text-align: center;
+    .icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .title {
+        margin-top: 25px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .desc {
+        margin: 10px auto 0;
+        color: $white-dark;
+        max-width: 244px;
+        line-height: 24px;
+    }
+  
+}
+
