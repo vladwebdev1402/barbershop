@@ -1,0 +1,57 @@
+.master__head {
+  display: flex;
+  background-color: $brown-dark;
+  align-items: center;
+  padding-right: 25px;
+}
+.master__ava {
+  width: 180px;
+  height: 180px;
+}
+
+.master__name {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-left: 50px;
+  margin-right: 24px;
+  max-width: 250px;
+}
+
+.master__desc {
+  max-width: 500px;
+  margin-left: auto;
+  font-family: Fira Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: $white-dark;
+}
+
+.master__body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    img {
+        max-width: 100%;
+    }
+}
+
+.master__footer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.master__see {
+  .master__see_icon {
+   transition: .3s;
+  }
+  &:hover {
+    .master__see_icon {
+      transform: rotate(180deg);
+    }
+  }
+}

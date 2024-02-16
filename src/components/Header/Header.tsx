@@ -1,5 +1,6 @@
 import Logo from '@/shared/assets/logo.svg?react';
 import MapIcon from '@/shared/assets/map.svg?react';
+import PhoneIcon from '@/shared/assets/phone.svg?react';
 
 import { ROUTER_PATHS } from '@/shared/constants';
 import { HeaderLink, Icon } from '@/shared/ui';
@@ -45,7 +46,7 @@ const Header = () => {
               <div className={st.time}>Daily from 9 to 20</div>
             </div>
             <Icon>
-              <MapIcon />
+              <PhoneIcon />
             </Icon>
           </div>
         </div>

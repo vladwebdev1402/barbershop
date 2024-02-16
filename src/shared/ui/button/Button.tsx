@@ -1,18 +1,20 @@
 import classNames from 'classnames';
 
-import { ComponentPropsWithRef, FC } from 'react';
+import { ComponentPropsWithRef, FC, ReactNode } from 'react';
 
 import st from './Button.module.scss';
 
 interface ButtonProps extends ComponentPropsWithRef<'button'> {
   variant?: 'contained' | 'outlined';
   color?: 'orange' | 'balck';
+  startIcon?: ReactNode;
 }
 
 const Button: FC<ButtonProps> = ({
   variant = 'contained',
   color = 'orange',
   className = '',
+  startIcon,
   children,
   ...props
 }) => {
@@ -25,7 +27,8 @@ const Button: FC<ButtonProps> = ({
 
   return (
     <button {...props} className={buttonClasses}>
-      {children}
+      {startIcon}
+      <span>{children}</span>
     </button>
   );
 };

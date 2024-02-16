@@ -1,0 +1,10 @@
+.masters {
+    margin-top: 90px;
+}
+
+.masters__master {
+    margin-top: 90px;
+    &:first-child {
+        margin-top: 0;
+    }
+}
