@@ -1,0 +1,54 @@
+.header {
+  padding: 36px 0px;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  margin-left: 70px;
+}
+
+.contacts {
+  display: flex;
+  gap: 42px;
+  align-items: center;
+  margin-left: 42px;
+}
+
+.contact__item {
+  display: flex;
+  gap: 15px;
+}
+
+.contact__subitem {
+  text-align: right;
+}
+
+.link {
+  transition: 0.3s;
+  &:hover {
+    color: $orange;
+  }
+}
+
+.address {
+  max-width: 105px;
+  text-align: right;
+}
+
+.phone {
+  font-size: 18px;
+}
+
+.time {
+  font-size: 14px;
+}

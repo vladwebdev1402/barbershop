@@ -1,10 +1,9 @@
-import { MainPage } from '@/pages/MainPage';
-
+import Router from './Router';
 import './fonts/fonts.scss';
 import './index.scss';
 
 function App() {
-  return <MainPage />;
+  return <Router />;
 }
 
 export default App;

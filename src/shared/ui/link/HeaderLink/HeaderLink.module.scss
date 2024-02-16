@@ -1,0 +1,10 @@
+.link {
+    font-size: 15px;
+    text-decoration: none;
+    color: $white;
+    white-space: nowrap;
+    transition: .3s;
+    &:hover {
+        color: $orange;
+    }
+}
