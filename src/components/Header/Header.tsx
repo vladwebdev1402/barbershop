@@ -24,7 +24,9 @@ const Header = () => {
           <a className={st.nav__link} href={ROUTER_PATHS.testimonials}>
             Testimonials
           </a>
-          <HeaderLink to={ROUTER_PATHS.contacts}>Contacts</HeaderLink>
+          <a className={st.nav__link} href={ROUTER_PATHS.contacts}>
+            Contacts
+          </a>
         </nav>
         <div className={st.contacts}>
           <div className={st.contact__item}>
