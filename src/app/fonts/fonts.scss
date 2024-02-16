@@ -1,27 +1,40 @@
 @font-face {
-    font-family: "Playfair Display";
-    font-weight: 900;
-    font-style: normal;
-    src: url(./PlayfairDisplay-Black.ttf);
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-style: normal;
+  src: url(./PlayfairDisplay-Black.ttf);
 }
 
 @font-face {
-    font-family: "Fira Sans";
-    font-weight: 400;
-    font-style: normal;
-    src: url(./FiraSans-Regular.ttf);
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url(./FiraSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Fira Sans";
-    font-weight: 600;
-    font-style: normal;
-    src: url(./FiraSans-SemiBold.ttf);
+  font-family: 'Fira Sans';
+  font-weight: 600;
+  font-style: normal;
+  src: url(./FiraSans-SemiBold.ttf);
 }
 
 @font-face {
-    font-family: "Fira Sans";
-    font-weight: 700;
-    font-style: normal;
-    src: url(./FiraSans-Bold.ttf);
+  font-family: 'Fira Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url(./FiraSans-Bold.ttf);
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  color: $invert;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }

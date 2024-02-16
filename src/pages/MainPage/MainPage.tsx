@@ -1,3 +1,4 @@
+import { AboutUs } from './components/AboutUs';
 import { Advantages } from './components/Advantages';
 import { Hero } from './components/Hero';
 
@@ -6,6 +7,7 @@ const MainPage = () => {
     <>
       <Hero />
       <Advantages />
+      <AboutUs />
     </>
   );
 };

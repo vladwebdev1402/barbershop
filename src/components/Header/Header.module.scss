@@ -5,6 +5,7 @@
 .body {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -38,6 +39,12 @@
   &:hover {
     color: $orange;
   }
+}
+
+.nav__link {
+  @extend .link;
+  white-space: nowrap;
+  font-size: 15px;
 }
 
 .address {

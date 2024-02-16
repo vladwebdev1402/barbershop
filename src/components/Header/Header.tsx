@@ -14,10 +14,16 @@ const Header = () => {
           <Logo className={st.logo} />
         </HeaderLink>
         <nav className={st.nav}>
-          <HeaderLink to={ROUTER_PATHS.about}>About Us</HeaderLink>
+          <a className={st.nav__link} href={ROUTER_PATHS.about}>
+            About Us
+          </a>
           <HeaderLink to={ROUTER_PATHS.masters}>Our Masters</HeaderLink>
-          <HeaderLink to={ROUTER_PATHS.about}>Portfolio</HeaderLink>
-          <HeaderLink to={ROUTER_PATHS.testimonials}>Testimonials</HeaderLink>
+          <a className={st.nav__link} href={ROUTER_PATHS.about}>
+            Portfolio
+          </a>
+          <a className={st.nav__link} href={ROUTER_PATHS.about}>
+            Testimonials
+          </a>
           <HeaderLink to={ROUTER_PATHS.contacts}>Contacts</HeaderLink>
         </nav>
         <div className={st.contacts}>

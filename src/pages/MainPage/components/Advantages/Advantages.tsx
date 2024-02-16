@@ -8,7 +8,7 @@ import st from './Advantages.module.scss';
 const Advantages = () => {
   return (
     <section className={st.advantages}>
-      <div className={`container ${st.body}`}>
+      <div className={`container ${st.advantages__body}`}>
         <Advantage
           Icon={<BarberIcon />}
           title="Briefly describe the benefit"

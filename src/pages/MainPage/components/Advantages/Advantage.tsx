@@ -11,9 +11,9 @@ interface AdvantageProps {
 const Advantage: FC<AdvantageProps> = ({ Icon, description, title }) => {
   return (
     <div className={st.advantage}>
-      <div className={st.icon}>{Icon}</div>
-      <div className={st.title}>{title}</div>
-      <div className={st.desc}>{description}</div>
+      <div className={st.advantage__icon}>{Icon}</div>
+      <div className={st.advantage__title}>{title}</div>
+      <div className={st.advantage__desc}>{description}</div>
     </div>
   );
 };
