@@ -21,7 +21,7 @@ const Header = () => {
           <a className={st.nav__link} href={ROUTER_PATHS.about}>
             Portfolio
           </a>
-          <a className={st.nav__link} href={ROUTER_PATHS.about}>
+          <a className={st.nav__link} href={ROUTER_PATHS.testimonials}>
             Testimonials
           </a>
           <HeaderLink to={ROUTER_PATHS.contacts}>Contacts</HeaderLink>

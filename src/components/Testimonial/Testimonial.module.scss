@@ -1,0 +1,30 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 280px;
+}
+
+.head {
+  width: 280px;
+  height: 280px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  color: $invert;
+}
+
+.desc {
+  color: $invert;
+  line-height: 24px;
+}
+
+.link {
+  font-size: 14px;
+  color: $orange;
+}
