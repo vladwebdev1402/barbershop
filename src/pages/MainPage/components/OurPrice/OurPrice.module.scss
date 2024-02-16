@@ -1,0 +1,36 @@
+.prices {
+  margin-top: 320px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    background-color: $brown-dark;
+    height: calc(100% + 120px + 120px + 145px);
+    top: -120px;
+    z-index: -1;
+  }
+}
+
+.prices__header {
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prices__subtitle {
+  margin-top: 24px;
+}
+
+.prices__body {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.prices__price {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}

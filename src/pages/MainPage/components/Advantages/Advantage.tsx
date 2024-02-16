@@ -6,11 +6,17 @@ interface AdvantageProps {
   Icon: ReactNode;
   title: string;
   description: string;
+  className?: string;
 }
 
-const Advantage: FC<AdvantageProps> = ({ Icon, description, title }) => {
+const Advantage: FC<AdvantageProps> = ({
+  Icon,
+  description,
+  title,
+  className = '',
+}) => {
   return (
-    <div className={st.advantage}>
+    <div className={`${className} ${st.advantage}`}>
       <div className={st.advantage__icon}>{Icon}</div>
       <div className={st.advantage__title}>{title}</div>
       <div className={st.advantage__desc}>{description}</div>
