@@ -7,11 +7,11 @@ import { Testimonials } from './components/Testimonials';
 const MainPage = () => {
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <Advantages />
       <AboutUs />
       <Testimonials />
-      <OurPrice />
+      <OurPrice /> */}
     </>
   );
 };

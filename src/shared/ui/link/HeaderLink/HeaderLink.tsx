@@ -6,11 +6,18 @@ import st from './HeaderLink.module.scss';
 interface HeaderLinkProps {
   children: ReactNode;
   to: string;
+  className?: string;
+  onClick?: () => void;
 }
 
-const HeaderLink: FC<HeaderLinkProps> = ({ children, to }) => {
+const HeaderLink: FC<HeaderLinkProps> = ({
+  children,
+  to,
+  className = '',
+  onClick,
+}) => {
   return (
-    <Link to={to} className={st.link}>
+    <Link to={to} className={`${className} ${st.link}`} onClick={onClick}>
       {children}
     </Link>
   );
