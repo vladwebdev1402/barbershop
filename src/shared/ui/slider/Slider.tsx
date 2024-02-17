@@ -41,6 +41,7 @@ interface Props {
   transition?: number;
   pagItemFromImgChildren?: boolean;
   onSwipe?: (swipe: boolean) => void;
+  className?: string;
 }
 
 const Slider: FC<Props> = ({
@@ -54,6 +55,7 @@ const Slider: FC<Props> = ({
   transition = 300,
   pagItemFromImgChildren = false,
   onSwipe,
+  className = '',
   st__pagination,
   st__list,
   st__pag__item,
@@ -340,7 +342,7 @@ const Slider: FC<Props> = ({
 
   return (
     <div
-      className={st.slider__wrapper}
+      className={`${className} ${st.slider__wrapper}`}
       onClick={(
         e: React.TouchEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>
       ) => {

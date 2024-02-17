@@ -12,12 +12,15 @@ interface MasterProps extends ComponentPropsWithRef<'div'> {
 
 const Master: FC<MasterProps> = ({ master, className = '' }) => {
   return (
-    <div className={`${className}`}>
+    <div className={`${className} ${st.master}`}>
       <div className={st.master__head}>
-        <div className={st.master__ava}>
-          <img src={master.ava} alt="ava" />
+        <div className={st.master__avacontainer}>
+          <div className={st.master__ava}>
+            <img src={master.ava} alt="ava" />
+          </div>
+          <div className={st.master__name}>{master.name}</div>
         </div>
-        <div className={st.master__name}>{master.name}</div>
+
         <div className={st.master__desc}>{master.desc}</div>
       </div>
       <div className={st.master__body}>

@@ -16,17 +16,19 @@ const Testimonials = () => {
           veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
         </div>
       </div>
-      <Slider
-        spaceBetween={20}
-        freeMode
-        countPagItem={2}
-        st__slider__container={st.testimonials__slider}
-        st__pag__btn__next={st.testimonials__next}
-        st__pag__btn__prev={st.testimonials__prev}>
-        {mockTestimonial.map((testimonial) => (
-          <Testimonial key={testimonial.id} testiomonial={testimonial} />
-        ))}
-      </Slider>
+      <div className={st.testimonials__body}>
+        <Slider
+          spaceBetween={20}
+          freeMode
+          countPagItem={2}
+          className={st.testimonials__slider}
+          st__pag__btn__next={st.testimonials__next}
+          st__pag__btn__prev={st.testimonials__prev}>
+          {mockTestimonial.map((testimonial) => (
+            <Testimonial key={testimonial.id} testiomonial={testimonial} />
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 };

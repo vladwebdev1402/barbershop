@@ -12,7 +12,7 @@
     margin-top: 12px;
 }
 
-.testimonials__slider {
+.testimonials__body {
     margin-top: 60px;
 }
 
@@ -42,4 +42,20 @@
   @extend .testimonials__slider_btn;
   background-image: url(@/shared/assets/arrow-left.svg);
   left: -54px;
+}
+
+@media (max-width: 1350px) {
+    .testimonials__body {
+       padding: 0 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials__body {
+       padding: 0px;
+    }
+
+    .testimonials__slider_btn {
+        display: none;
+    }
 }

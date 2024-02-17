@@ -11,7 +11,7 @@ import st from './OurPrice.module.scss';
 const OurPrice = () => {
   return (
     <section className={st.prices}>
-      <div className={st.prices__header}>
+      <div className={`container ${st.prices__header}`}>
         <h2>OurPrice</h2>
         <div className={`subtitle ${st.prices__subtitle}`}>
           Subheading that reveals the details of the title and calls for the

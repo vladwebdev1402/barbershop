@@ -18,13 +18,21 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 
+    div {
+        max-height: 337px;
+        overflow: hidden;
+    }
+
     div img {
         max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
     div:last-child {
         position: relative;
-        top: -60px
+        bottom: 60px
     }
 }
 
@@ -39,4 +47,15 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1256px) {
+    .about__body {
+        grid-template-columns: 1fr;
+
+        div:last-child {
+            bottom: 0px
+        }
+    }
 }

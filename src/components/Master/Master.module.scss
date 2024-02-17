@@ -1,12 +1,26 @@
+.master {
+  container-name: master;
+  container-type: inline-size;
+}
+
 .master__head {
   display: flex;
+  justify-content: space-between;
   background-color: $brown-dark;
   align-items: center;
   padding-right: 25px;
+  flex-wrap: wrap;
+  row-gap: 35px;
 }
+
 .master__ava {
   width: 180px;
   height: 180px;
+}
+
+.master__avacontainer {
+  display: flex;
+  align-items: center;
 }
 
 .master__name {
@@ -20,12 +34,13 @@
 
 .master__desc {
   max-width: 500px;
-  margin-left: auto;
   font-family: Fira Sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   color: $white-dark;
+  margin-left: 16px;
+  margin-bottom: 16px;
 }
 
 .master__body {
@@ -53,5 +68,33 @@
     .master__see_icon {
       transform: rotate(180deg);
     }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .master__body {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+
+  }
+  .master__desc {
+    max-width: 100%;
+  }
+  .master__name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 568px) {
+  .master__name {
+    font-size: 35px;
+    margin: 0 0 0 16px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 420px) {
+  .master__name {
+    font-size: 25px;
   }
 }
